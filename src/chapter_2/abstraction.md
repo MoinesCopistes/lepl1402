@@ -1,6 +1,7 @@
 # Abstraction
 
-Cette partie est en lien avec [les interfaces](./interface.md)
+Cette partie est en lien avec [les interfaces](./interface.md), il est conseillée d'avoir déjà lu la partie sur celles-ci
+
 L'abstraction peut apparaitre sous forme de classe, méthode, le but ici est de définir des méthodes de base et un corp sans devoir le réécrire pour chaque classe qui l'utilise
 
 Il ne faut le confondre avec une interface qui elle veut forcer l'implementation de méthode dans un classe alors qu'ici on veut insérer des méthodes dans une classe
