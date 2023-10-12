@@ -17,6 +17,10 @@ public class Main extends AbstractClass{
     public static void main(String[] args){}
 }
 ```
+Ceci nous permet d'accéder à `stringMethod` par 
+```java
+new Main().stringMethod();
+```
 
 Comme dans les interfaces, on peut les écraser avec un décorateur
 
