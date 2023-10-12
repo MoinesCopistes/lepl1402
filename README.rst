@@ -45,7 +45,7 @@ Open a terminal in the desired folder and run:
 
 .. code:: sh
 
-    git clone https://github.com/emecdelam/lepl1402.git
+    git clone https://github.com/MoinesCopistes/lepl1402.git
 
 This will clone the repository to your local machine.
 
