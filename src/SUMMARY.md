@@ -8,4 +8,6 @@
     - [Operateurs](chapter_1/operateurs.md)
     - [Formatage](chapter_1/formatage.md)
     - [Tests](chapter_1/tests.md)
+- [Programmation Objet](chapter_2/root.md)
+    - [Interface](chapter_2/interface.md)
 [Sources](sources.md)
