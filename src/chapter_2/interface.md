@@ -1,6 +1,6 @@
 # Interface
 
-Une interface est un moyen abstrait de définir ce qui devrait être dans une classe,  on créer une interface avec des méthode et si on veut créer une classe basée sur cette interface, on doit l'implémenter avec `implements` et utiliser un décorateur pour signifier que l'on créer une methode de l'implementation que l'on va écraser
+Une interface est un moyen abstrait de définir ce qui devrait être dans une classe,  on créer une interface avec des méthodes et si on veut créer une classe basée sur cette interface, on doit l'implémenter avec `implements` et utiliser un décorateur pour signifier que l'on créer une methode de l'implementation que l'on va écraser
 ```java
 interface Interface{
     public String InterfaceMethod();
@@ -19,7 +19,7 @@ public class Main implements Interface{
 Il **faut** utiliser le décorateur `@Override` et implémenter la méthode
 ```
 
-Certaine méthode peuvent prendre des arguments en paramètre, il faut alors l'indiquer dans l'interface, cela peut aussi etre des constantes et des variables propre à la classe
+Certaines méthodes peuvent prendre des arguments en paramètres, il faut alors l'indiquer dans l'interface, cela peut aussi être des constantes et des variables propres à la classe
 
 ```java
 interface Interface{
@@ -47,7 +47,7 @@ String result = new Main().InterfaceMethod();
 ```
 
 ```admonish question title="Le saviez-vous?"
-On peut définir des constantes et des paramètres dans une interface qui peuvent être acceder depuis celle ci
+On peut définir des constantes et des paramètres dans une interface qui peuvent être accedée depuis celle ci
 ```
 
 ```java
@@ -59,7 +59,7 @@ interface Interface{
 ```
 
 
-Afin d'éviter de devoir à chaque implémentation rajouter des méthode qui ne change pas de l'interface, on peut utiliser la signature `default`
+Afin d'éviter de devoir à chaque implémentation rajouter des méthodes qui ne change pas de l'interface, on peut utiliser la signature `default`
 ```java
 interface Interface {
     default String defaultMethod() {
@@ -115,7 +115,7 @@ class Test{
 }
 ```
 
-On peut également implémenter plusieurs interface en même temps
+On peut également implémenter plusieurs interfaces en même temps
 
 ```java
 interface Interface{

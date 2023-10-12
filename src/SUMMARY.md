@@ -11,4 +11,5 @@
     - [Tests](chapter_1/tests.md)
 - [Programmation Objet](chapter_2/root.md)
     - [Interface](chapter_2/interface.md)
+    - [Abstraction](chapter_2/abstraction.md)
 [Sources](sources.md)

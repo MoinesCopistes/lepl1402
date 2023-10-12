@@ -6,19 +6,19 @@ de travailler (nombres, ...) et il faut donc pour ça connaitre les différents 
 
 ## Les types primitifs
 
-**int** :: Le type int fait référence a un nombre **entier** 
+***`int`*** : Le type int fait référence a un nombre **entier** 
 
-**float** :: Le type float fait référence a un nombre décimal (ex: 5,2) 
+***`float`*** : Le type float fait référence a un nombre décimal (ex: 5,2) 
 
-**long** :: Le type long contient un nombre **entier**, mais qui peut être bien plus grand que dans un `int`
+***`long`*** : Le type long contient un nombre **entier**, mais qui peut être bien plus grand que dans un `int`
 
-**byte** :: Le type byte contient un byte, autrement dit 8 bits (0 ou 1) et peut donc stocker un nombre allant de -128 a 127 ($2^8$ = 256 possibilités dans 8 bits)
+***`byte`*** : Le type byte contient un byte, autrement dit 8 bits (0 ou 1) et peut donc stocker un nombre allant de -128 a 127 ($2^8$ = 256 possibilités dans 8 bits)
 
-**double** :: Le type double peut contenir un nombre décimal plus grand que le nombre maximum d'un float.
+***`double`*** : Le type double peut contenir un nombre décimal plus grand que le nombre maximum d'un float.
 
-**boolean** :: Le type boolean est un "vrai ou faux" (`true`: vrai et `false`: faux) 
+***`boolean`*** : Le type boolean est un "vrai ou faux" (`true`: vrai et `false`: faux) 
 
-**char** :: Le type char fait référence a **un** caractère
+***`char`*** : Le type char fait référence a **un** caractère
 
 Ces types ne font que contenir une donnée. Tout ce que l'on peut faire avec ce sont les différentes opérations (cf: Chapitre 1.2).
 
