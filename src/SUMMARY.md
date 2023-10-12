@@ -13,4 +13,6 @@
     - [Interface](chapter_2/interface.md)
     - [Abstraction](chapter_2/abstraction.md)
     - [Héritage](chapter_2/heritage.md)
+- [Structure de donnée](chapter_3/root.md)
+    - [Stack recursif](chapter_3/recursivestack.md)
 [Sources](sources.md)

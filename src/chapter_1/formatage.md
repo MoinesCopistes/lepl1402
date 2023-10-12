@@ -18,6 +18,7 @@ public class TestClass {
     // functions here
 }
 ```
+A noté qu'il faut indiqué par `class` qu'il s'agit d'une classe
 Ensuite, il faut pour que vote fichier puisse être exécuté, c'est à dire pas depuis des tests, qu'il possède un fonction main comme 
 ```java
 public class MyClass {
@@ -26,6 +27,26 @@ public class MyClass {
     }
 }
 ```
+La partie fonction en elle même consiste à 
+
+```java
+void main(String[] args){
+        // do smth
+    }
+```
+Elle nous indique que la fonction `main` qui prend en argument `String[] args` retourne `void` c'est à dire rien, si la fonction terminait par 
+```java
+return new String(" ");
+```
+sa déclaration serait
+```java
+String main(String[] args){}
+```
+En java également, les `{}` ont de l'importance, ils délimitent le début et la fin du corp d'une fonction/classe
+
+De même chaque ligne qui est dans le corps d'une fonction doit terminer par `;` pour signifier que la ligne est finie
+
+
 On peut alors rajouter des fonctions et des classes (non publique)
 ```java
 public class MyClass {
@@ -63,4 +84,11 @@ public static void main(String[] args){
         int n = 0;
     }
 ```
-la fonction doit retourner `void` c'est à dire rien, ce qui peut arriver avec une fonction qui créer un fichier par exemple ou bien qui utilise `System.out`, on peut aussi voir qu'elle prend `String[] args` en argument, `String[]` est le type de `args` soit une liste de [`String`](array.md), `n` aussi est déclaré, il est ici un entier (´int´)
+la fonction doit retourner `void` c'est à dire rien, ce qui peut arriver avec une fonction qui créer un fichier par exemple ou bien qui utilise `System.out`, on peut aussi voir qu'elle prend `String[] args` en argument, `String[]` est le type de `args` soit une liste de [`String`](array.md), `n` aussi est déclaré, il est ici un entier (´int´), la variable déclarée doit être une classe
+
+```java
+public static void main(String[] args){
+        int[] n = new int[1];
+    }
+```
+Ici on peut voir que pour créer une liste on utilise le mot `new` qui est propre aux classes qu'on initialise
