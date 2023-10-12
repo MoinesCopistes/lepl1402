@@ -12,4 +12,5 @@
 - [Programmation Objet](chapter_2/root.md)
     - [Interface](chapter_2/interface.md)
     - [Abstraction](chapter_2/abstraction.md)
+    - [Héritage](chapter_2/heritage.md)
 [Sources](sources.md)
