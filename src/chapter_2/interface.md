@@ -1,6 +1,9 @@
 # Interface
 
 Une interface est un moyen abstrait de définir ce qui devrait être dans une classe,  on créer une interface avec des méthodes et si on veut créer une classe basée sur cette interface, on doit l'implémenter avec `implements` et utiliser un décorateur pour signifier que l'on créer une methode de l'implementation que l'on va écraser
+
+Le but est de mettre des fonctions communes dans une interface pour pouvoir les appeler depuis l'interface, comme une superclasse
+
 ```java
 interface Interface{
     public String InterfaceMethod();
@@ -109,13 +112,15 @@ public class Main implements Interface{
 }
 class Test{
     public static void main(String[] args){
-        //Main.returnString(" "); returns an error
+        //==========================================
+        //  Main.returnString(" "); returns an error
+        //==========================================
         Interface.returnString(" ");
     }
 }
 ```
 
-On peut également implémenter plusieurs interfaces en même temps
+On peut également implémenter plusieurs interfaces en même temps, ce qui nous force à ajouter plusieurs méthodes
 
 ```java
 interface Interface{
