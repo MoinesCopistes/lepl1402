@@ -4,7 +4,8 @@ lepl1402
 Go to the `website <https://moinescopistes.github.io/lepl1402/>`__
 
 This repository contains solutions to the lepl 1402 inginious course and the theory webpage source code
-The source code in in code/src
+
+The source code is in `code/src`
 
 .. |version| image:: https://img.shields.io/badge/Version%20-0.0.1-orange?logo=git
    :alt: Version 0.0.1
