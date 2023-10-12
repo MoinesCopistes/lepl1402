@@ -30,7 +30,7 @@ Everyone can contribute!!! If you have :
 - **better explanations**
 - *or you simply want to add comments*
 
-just make a pull request.
+just make a pull request !
 
 Installing
 ----------
