@@ -1,6 +1,6 @@
 # Chapter 1
 
-
+Ce chapitre parle des concepts de base et classes de base, pas complet, pour plus de détail, une recherche google devrait vous trouver la réponse.
 
 
 
