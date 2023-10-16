@@ -1,4 +1,4 @@
-# Structure de donnée
+# Classe utiles
 
 Cette partie est liée aux structures de données et les méthodes associée à chaque type
 
