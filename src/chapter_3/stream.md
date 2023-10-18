@@ -2,13 +2,19 @@
 
 Les Streams en java sont un moyen de base de 'accéder à des valeurs de `Collections`, et de performer des operations sur des données et éléments de la structure
 
+Tout d'abord on peut les importers avec 
+```java
+import java.util.stream.Stream;
+```
+On peut les créer sur base de valeurs finies
+
 ```java
 Stream<Integer> stream1 = Stream.of(1,2,3,5);
 ```
 
-Ici on créer un `Stream` sur un set de valeur finie, mais on peut aussi faire des streams infinis
-
 ## Stream infini
+
+On peut aussi faire des streams infinis avec `.iterate()`
 
 ```java
 UnaryOperator<Integer> operator = new UnaryOperator<Integer>() {

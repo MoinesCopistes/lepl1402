@@ -1,5 +1,9 @@
 package parallelization;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.IllegalFormatException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
@@ -92,7 +96,7 @@ public class FuturesLibrary {
                                          Predicate<Book> predicate,
                                          int startBookIndex,
                                          int countBooks) {
-        if (startBookIndex < 0 || countBooks < 0){
+        if (countBooks < 0 || startBookIndex < 0 || startBookIndex+countBooks > library.getNumberOfBooks()){
             throw new IllegalArgumentException();
         }
         int count = 0;
@@ -126,8 +130,8 @@ public class FuturesLibrary {
     public static int countMatchingBooksWithThreads(Library library,
                                                     Predicate<Book> predicate,
                                                     ExecutorService executor,
-                                                    int countThreads){
-        if (countThreads <= 0) {
+                                                    int countThreads) {
+        if (countThreads <= 0){
             throw new IllegalArgumentException();
         }
         ArrayList<Future<Integer>> list = new ArrayList<>();
@@ -136,11 +140,7 @@ public class FuturesLibrary {
             int startIndex = i * nbooks;
             int endIndex = (i == countThreads - 1) ? library.getNumberOfBooks() : startIndex + nbooks;
             Future<Integer> result = executor.submit(()-> {
-                try {
-                    return countMatchingBooks(library,predicate,startIndex,endIndex-startIndex);
-                } catch (IllegalArgumentException e){
-                    return 0;
-                }
+                return countMatchingBooks(library,predicate,startIndex,endIndex-startIndex);
             });
             list.add(result);
         }
